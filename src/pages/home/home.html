@@ -6,10 +6,16 @@
 
 <ion-content padding>
 
-    <ion-list>
-     
-          <button ion-item >
-             
-          </button>
-    </ion-list>
+  <ion-list>
+    <Button ion-item *ngFor="let sura of allSura" class="button button-block custom" text-right>
+      <ion-row>
+        <ion-col col-1>
+          {{sura.index}}
+        </ion-col>
+        <ion-col col-20>
+          {{sura.name}}
+        </ion-col>
+      </ion-row>
+    </Button>
+  </ion-list>
 </ion-content>
